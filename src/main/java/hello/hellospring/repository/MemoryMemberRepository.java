@@ -8,7 +8,7 @@ public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
-
+    // 커밋 정상적인지 테스트
     @Override
     public Member save(Member member) {
         member.setId(++sequence);
